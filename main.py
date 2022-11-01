@@ -1,5 +1,6 @@
 import pyglet
-import ui
 import speech
+
+window = pyglet.window.Window()
 
 pyglet.app.run()
