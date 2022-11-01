@@ -1,3 +1,4 @@
 import pyglet
-from cytolk import tolk
+import speech
 
+speech.speak ("Hello, world!")
