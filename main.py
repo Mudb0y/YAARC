@@ -1,4 +1,5 @@
 import pyglet
+import ui
 import speech
 
-speech.speak ("Hello, world!")
+pyglet.app.run()
