@@ -1,4 +1,9 @@
 import pyglet
+import speech
 
-def window():
-    window = pyglet.window.Window()
+window = pyglet.window.Window()
+
+@window.event
+def on_key_press (symbol, modifiers):
+    speech.speak ("A key was pressed")
+    
