@@ -4,7 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-wxpython = "*"
+pyglet = "*"
+cytolk = "*"
 
 [dev-packages]
 
