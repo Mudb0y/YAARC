@@ -4,15 +4,11 @@ import praw
 from lib import speech
 from lib import authlib
 
-#app = wx.App()
+app = wx.App()
 
-#frame = wx.Frame(None, title="YAARC")
-#frame.Show()
-
-
-
-#app.MainLoop()
+frame = wx.Frame(None, title="YAARC")
+frame.Show()
 
 
-print ("Auth test...")
-authlib.authenticate()
+
+app.MainLoop()
