@@ -1,11 +1,12 @@
 import os
-from lib import speech
 import pyglet
 import praw
+from lib import speech
+from lib import oauth
 
 window = pyglet.window.Window()
 
 if not os.path.isfile ("auth.token"):
-    from lib import oauth
-
+    oauth.authorise ()
+    
 pyglet.app.run()
