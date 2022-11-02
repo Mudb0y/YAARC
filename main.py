@@ -2,7 +2,7 @@ import os
 import pyglet
 import praw
 from lib import speech
-from lib import oauth
+from lib import authlib
 
 window = pyglet.window.Window()
 
@@ -12,7 +12,7 @@ if not os.path.isfile ("token.auth"):
     @window.event
     def on_key_press(symbol, modifiers):
         if symbol == pyglet.window.key.ENTER:
-            oauth.authorise()
+            authlib.get_token()
 else:
     speech.speak ("Welcome to YAARC!")
 
