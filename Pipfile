@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 pyglet = "*"
 cytolk = "*"
+praw = "*"
 
 [dev-packages]
 

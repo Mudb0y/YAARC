@@ -1,5 +1,7 @@
+import os
+from . import speech
 import pyglet
-import speech
+import praw
 
 window = pyglet.window.Window()
 
