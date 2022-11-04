@@ -1,14 +1,7 @@
 import os
-import wx
 import praw
+import wx
 from lib import speech
 from lib import authlib
+from lib import ui
 
-app = wx.App()
-
-frame = wx.Frame(None, title="YAARC")
-frame.Show()
-
-
-
-app.MainLoop()
