@@ -1,4 +1,5 @@
 import wx
+from lib import authlib
 from lib import ui
 
 # Main WX event-loop.
@@ -8,8 +9,6 @@ class App(wx.App):
         self.SetTopWindow(self.frame)
         self.frame.Show()
         return True
-
-ui.Welcome(parent)
 
 if __name__ == "__main__":
     app = App(0)
