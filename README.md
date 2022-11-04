@@ -21,3 +21,9 @@ On top of the basic features you'd expect from a Reddit client, I'm planning on 
 Originally I planned to use Pyglet and build my own UI. People have discouraged me from doing so, and for good reason.
 
 Instead, I'll go for a compromise. I want to be able to read posts quickly and efficiently with minimal efford, so instead of displaying part of the post in the listview, I'll send the contents to the speech API directly, whilst also displaying them in an edit-box for these who prefer reading.
+
+### UI Design
+
+For UI design, I'm using WXGlade. The reason for that is that it's very simple to use, and certainly simpler than designing the WX code from scratch.
+
+So far it seems to work okay for this project, so I'll probably stick with it unless I hit a massive roadblock which will force me off-of using it.
