@@ -10,7 +10,7 @@ class App(wx.App):
         self.frame = ui.main_window(None, wx.ID_ANY, "")
         self.SetTopWindow(self.frame)
         self.frame.Show()
-        if not os.path.isfile("tokan.auth"):
+        if not os.path.isfile("token.auth"):
             auth_dialog = authui.no_token(self.frame)
             auth_dialog.ShowModal()
         else:
