@@ -2,6 +2,22 @@
 
 Yet another accessible Reddit client
 
+## Disclaimer
+
+This is nowhere near complete. I started this as a private repo because I wasn't sure how I'll license it and I hate having a bunch of empty / unfinished projects on my public profile.
+
+It seems as though this project will actually get somewhere so I decided to publish it.
+
+Be warned though, the code will be verry messy. This is my first ever project on a bigger scale (multiple modules, UI, ETC) so I can say this without a shadow of a doubt in my mind. Oh, and friendly tip, do not look at the commit history and all the changed files unless you want to facepalm.
+
+If you have any ideas for improvement, feel free to submit issues and PRs! I'll be grateful for any feedback.
+
+## What is implemented so far?
+
+So far I managed to successfully make a very basic authentication library which checks for a saved refresh token, and if none is found it authenticates through Reddit's API.
+
+I'm able to print submitions via commandline, but I'm not able to display them in a list. I'm a WX newbie though so I'm sure I'll figure it out someday.
+
 ## Why?
 
 Just because I can.
@@ -16,7 +32,7 @@ This is supposed to be a concept-clone of Reddit For Blind, which in my experien
 
 On top of the basic features you'd expect from a Reddit client, I'm planning on potentially adding more features such as chat integration, native video playback support, and more.
 
-## Guess we're using WX, then
+## Guess we're using WX
 
 Originally I planned to use Pyglet and build my own UI. People have discouraged me from doing so, and for good reason.
 
