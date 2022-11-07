@@ -10,11 +10,11 @@ It seems as though this project will actually get somewhere so I decided to publ
 
 Be warned though, the code will be verry messy. This is my first ever project on a bigger scale (multiple modules, UI, ETC) so I can say this without a shadow of a doubt in my mind. Oh, and friendly tip, do not look at the commit history and all the changed files unless you want to facepalm.
 
-If you have any ideas for improvement, feel free to submit issues and PRs! I'll be grateful for any feedback.
+If you have any ideas for improvement, feel free to submit issues and PRs! I'll be grateful for any contributions and feedback.
 
 ## What is implemented so far?
 
-So far I managed to successfully make a very basic authentication library which checks for a saved refresh token, and if none is found it authenticates through Reddit's API.
+I managed to successfully make a very basic authentication library which checks for a saved refresh token, and if none is found it authenticates through Reddit's API.
 
 I'm able to print submitions via commandline, but I'm not able to display them in a list. I'm a WX newbie though so I'm sure I'll figure it out someday.
 
