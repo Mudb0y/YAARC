@@ -16,7 +16,7 @@ If you have any ideas for improvement, feel free to submit issues and PRs! I'll 
 
 I managed to successfully make a very basic authentication library which checks for a saved refresh token, and if none is found it authenticates through Reddit's API.
 
-I'm able to print submitions via commandline, but I'm not able to display them in a list. I'm a WX newbie though so I'm sure I'll figure it out someday.
+For now I managed to display submitions from R/Test in a list. After I implement displaying of the body text I will actually display the contents of a users front-page.
 
 ## Why?
 
@@ -43,3 +43,8 @@ Instead, I'll go for a compromise. I want to be able to read posts quickly and e
 For UI design, I'm using WXGlade. The reason for that is that it's very simple to use, and certainly simpler than designing the WX code from scratch.
 
 So far it seems to work okay for this project, so I'll probably stick with it unless I hit a massive roadblock which will force me off-of using it.
+
+When making new UI elements, keep in mind a few things:
+* Do-not make everything in to a ton of menus. This will just make the navigation more clunky than it should be.
+* Design the UI with blind users in mind. Test with a screen-reader and make sure everything reads before submitting a PR.
+* And finally, just stick to common UI design practices and don't stray too far off them. I'll make allowances for some uncommon things that simply work better for blind people, as this is a client made by the blind for the blind, but for the love of god don't do what Luna for Reddit did with the whole putting full-stops on buttons thing. That is not how you design user interfaces, and blind or not this is a standard.
