@@ -1,7 +1,7 @@
 import os
 import wx
-from lib import authlib
-from lib import ui, authui
+from libs import authlib
+from libs import ui, authui
 
 # Main WX event-loop.
 class App(wx.App):
