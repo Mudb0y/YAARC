@@ -37,11 +37,17 @@ class main_window(wx.Frame):
         sizer_1.Fit(self)
         self.Layout()
 
-        self.Posts.Bind(wx.EVT_LISTBOX, self.get_frontpage_posts)
+        self.get_frontpage_posts()
+        # Bad idea to do this binding, Because it'll keep reloading whenever the list was cycled through.
+        #self.Posts.Bind(wx.EVT_LISTBOX, self.get_frontpage_posts)
 
-# Getting submitions from R/Test temporarily to make sure everything loads. 
+# We're only getting submitions from R/Test temporarily.
     def get_frontpage_posts(self):
         posts = list(map(lambda x: x.title, reddit.subreddit("test").random_rising()))
         self.Posts.InsertItems(posts, 0)
 
     get_frontpage_posts
+
+    # Only here for debugging purposes to make sure the authentication actually worked.
+for submission in reddit.subreddit("test").random_rising():
+    print(submission.title)
