@@ -39,13 +39,9 @@ class main_window(wx.Frame):
 
         self.Posts.Bind(wx.EVT_LISTBOX, self.get_frontpage_posts)
 
-    # This doesn't work, probably because I'm a n00b.
-    def get_frontpage_posts(self, event):
-        for submission in reddit.subreddit("test").random_rising():
-            self.Posts.Append(submission.title)
+# Getting submitions from R/Test temporarily to make sure everything loads. 
+    def get_frontpage_posts(self):
+        posts = list(map(lambda x: x.title, reddit.subreddit("test").random_rising()))
+        self.Posts.InsertItems(posts, 0)
 
     get_frontpage_posts
-
-    # Only here for debugging purposes to make sure the authentication actually worked.
-for submission in reddit.subreddit("test").random_rising():
-    print(submission.title)
